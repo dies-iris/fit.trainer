@@ -1,0 +1,28 @@
+.DayPicker-Day--birthday {
+    background-color: #00bcd4;
+    color: white;
+  }
+  .DayPicker-Day--monday {
+    color: #00bcd4;
+  }
+
+  .DayPicker {
+    font-size: 2rem;
+  }
+
+  /* .DayPicker-Day, .DayPicker-WeekNumber {
+    padding: .5em 1em;
+  } */
+
+  .DayPicker-Day {
+    padding: 0;
+  }
+
+  .page-coach-appli.calendrier{
+    border-radius: 10px;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+    background-color: rgba(255,255,255,.95)
+  }

@@ -1,0 +1,84 @@
+.page-coach-appli {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-programme-exercices h1{
+    text-align: center;
+}
+
+.programmes-page {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 90%;
+    max-height: 250px;
+    max-width: 400px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-coach-appli {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 600px;
+    /* box-shadow: 10px 10px lightgrey; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.exercice-info {
+    text-align: left;
+}
+
+.exercice-description {
+    background-color: white;
+    overflow: auto;
+    height: 90vh;
+    padding: 20px;
+}
+
+.container-coach-appli>h2 {
+    text-align: center;
+}
+
+.exercices {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.exercice-court {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exercice-court h3{
+    margin-top: 0px
+}
+
+svg.MuiSvgIcon-root {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.img-prog-commencer{
+    position: relative;
+    width: 100%;
+}
+.img-prog-commencer img {
+    border-radius: 0 0 10px 10px;
+}
+
+.exercice-info>a{
+    color: var(--bleu);
+}
+.exercice-info>a:hover{
+    color: var(--bleu);
+    opacity: .7;
+}
+

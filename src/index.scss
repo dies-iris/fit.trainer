@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import "variables.scss";
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.mr-20 {
+  margin-right: 20px !important;
+}
+
+#root{
+  background-image: linear-gradient($primary, transparent);
+}

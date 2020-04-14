@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange_gradient: linear-gradient(to bottom right, rgb(252, 74, 26), rgb(247, 183, 51));;
+    /* --orange_gradient: linear-gradient(to bottom right, rgba(248,95,43,255), rgba(246, 215, 0, 255)); */
+    --bleu: #1987BE;
+    --bleu_clair: rgb(92, 186, 233);
+    --jaune: #fed71b;
+    --bleu_gradient: linear-gradient(to bottom right, rgba(248,95,43,255), rgba(246, 215, 0, 255));
+
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    color: var(--bleu);
+transition: all .3s;
+}
+
+a:hover{
+    opacity: .7;
+}
+
+a:visited{
+    color: var(--bleu);
+}
+
+.container-coach-appli input {
+    border: none;
+}
+
+.container-coach-appli>h2 {
+    margin-bottom: 10px;
+}
+
+.souligne_jaune {
+    text-align: center;
+  }
+
+.souligne_jaune:before { 
+    content: "";
+    display: block; 
+    z-index: 0;    
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10px;
+    position: relative;
+    top: 2.5rem;
+    background-color: var(--jaune);
+  }
+
+.page-area{
+    padding-top: 0px;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    overflow: auto;
+    background-image: url('https://projetiw2.buroscope.eu/wp-content/uploads/2020/03/app_background.jpg');
+    background-size: cover;
+}
+

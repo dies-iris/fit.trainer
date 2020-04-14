@@ -1,0 +1,28 @@
+img#hommeSilhouette {
+    height: 600px;
+}
+
+div.silhouette-et-form {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+
+form.mesures {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form.mesures>*{
+    margin-top: 20px;
+}
+
+input.case-formulaire{
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 1em;
+    font-size: 1em;
+    text-align: center;
+}

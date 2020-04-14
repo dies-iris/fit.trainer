@@ -1,0 +1,92 @@
+
+.popup-page {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-image: var(--orange_gradient);
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 100;
+}
+
+.popup-page.recup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-page.recup>* {
+  display: block;
+}
+
+
+.countdown-number {
+  color: white;
+  align-self: center;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%, -50%); */
+  animation: zoom 1s infinite;
+}
+
+.recup .countdown-number {
+  animation: none;
+  font-size: 10em;
+  background-color: rgba(255,255,255,.2);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  margin: unset;
+}
+
+.recup a {
+  color: white;
+  cursor: pointer;
+}
+
+.popup-page.recup .MuiLinearProgress {
+  align-self: flex-end;
+}
+
+
+@keyframes zoom {
+  from {
+    font-size: 2em;
+    opacity: 1;
+  }
+  to {
+    font-size: 20em;
+    opacity: 0;
+  }
+}
+
+
+a.close-popup {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+a.close-popup svg.MuiSvgIcon-root {
+  width: 40px;
+  height: 40px;
+  color: white;
+  opacity: .5;
+  z-index: 100;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 113px;
+  }
+}
+
+

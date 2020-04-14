@@ -1,0 +1,144 @@
+.popup-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    max-width: 300px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.text-fit,.text-trainer {
+    position: fixed;
+    color: rgba(255,255,255,.2);
+    font-size: 12rem;
+    z-index: 2;
+    font-family: 'Fugaz One', sans-serif;
+    transform: rotate(-90deg);
+    display: block;
+    pointer-events: none;
+}
+
+.text-fit{
+	top: 1rem;
+    left: -6rem;
+}
+.text-trainer{
+	top: 33%;
+    right: -22rem;
+}
+
+.popup-message button {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.popup-page.noir {
+    background-color: rgba(0,0,0,.7);
+    background-image: none;
+}
+
+div.MuiPaper-root.MuiPaper-elevation0.MuiStepper-root.MuiStepper-horizontal {
+    background-color: transparent;
+}
+
+.MuiTypography-body2 {
+    font-size: 1rem;
+}
+
+.MuiStepIcon-root.MuiStepIcon-active {
+    color: #000000;
+}
+
+.MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+    margin-top: 5px;
+    font-size: .9rem;
+}
+
+
+.MuiStepIcon-root.MuiStepIcon-completed {
+    color: rgba(255,255,255,.5)
+}
+
+.MuiMobileStepper-root {
+    /* background : rgba(246, 215, 0, .4);
+    padding: 0;
+    margin: 10px 0; */
+    max-width: 400;
+    flex-grow: 1;
+}
+
+.MuiButton-outlinedSecondary {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.MuiButton-outlinedSecondary:hover {
+    background-color: rgba(255,255,255, 0.2);
+    border: 1px solid #fff;
+}
+
+.popup-page .MuiButton-root:hover {
+    background-color: transparent;
+    opacity: .8;
+}
+
+.two-images-container {
+    position: relative;
+    text-align: center;
+}
+
+.two-images-container img {
+    max-width: 60%;
+    max-height: 60vh;
+}
+
+.two-images-container.full img {
+    width: 100%;
+}
+
+.two-images-container img:first-of-type {
+    position: relative;
+}
+
+.two-images-container img:last-of-type {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.exercice-image.animate {
+   animation: 4s blur 2s infinite; 
+}
+
+@keyframes blur {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.Stopwatch-display {
+    font-size: 3em;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

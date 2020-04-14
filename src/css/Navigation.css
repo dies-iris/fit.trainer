@@ -1,0 +1,25 @@
+div.MuiBottomNavigation-root{
+    position: fixed;
+    bottom: 0;
+    width: 100vw !important;
+    z-index: 100;
+}
+
+a.MuiBottomNavigationAction-root.Mui-selected {
+    color: #ff8a09;
+}
+
+a.MuiBottomNavigationAction-root.targetToHome{
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+
+a.MuiBottomNavigationAction-root.targetToHome img{
+width: 85px;
+}
+
+span.MuiBottomNavigationAction-label,
+span.MuiBottomNavigationAction-label.Mui-selected {
+    font-size: .8em;
+}

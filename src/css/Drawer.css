@@ -1,0 +1,54 @@
+.drawer {
+    position: fixed;
+    padding: 150px 10px 10px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,.5);
+    transition: all .5s;
+    width: 250px;
+    height: 100vh;
+}
+
+.drawer h1 {
+    font-family: 'Fugaz One', sans-serif;
+}
+
+header a.close-popup {
+    left: 200px;
+}
+
+header a.close-popup svg.MuiSvgIcon-root {
+    color: black;
+}
+
+.MuiLinearProgress-barColorPrimary {
+    background-color: var(--bleu);
+}
+
+.MuiLinearProgress-colorPrimary {
+    background-color: var(--bleu_clair);
+}
+
+.MuiRadio-colorSecondary.Mui-checked,
+.MuiSlider-root,
+.MuiIconButton-colorPrimary {
+    color: var(--bleu);
+}
+
+.MuiIconButton-colorSecondary:hover {
+    color: var(--bleu_clair);
+}
+
+.MuiInput-underline:after {
+    border-bottom: 2px solid var(--bleu);
+}
+
+svg.MuiSvgIcon-root {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.container-coach-appli.profil {
+    padding: 20px 10%;
+}

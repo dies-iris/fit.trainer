@@ -1,0 +1,243 @@
+.site-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: rgba(255,255,255,.9);
+    z-index: 3;
+}
+
+.responsive_element {
+    display: none;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tableau-de-bord {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+}
+
+a {
+    display: block;
+}
+
+.tableau-de-bord>a {
+    text-align: center;
+    padding: 5%;
+}
+
+.tableau-de-bord li {
+    list-style-type: none;
+}
+.tableau-de-bord li>a {
+    padding: 8px 15px;
+}
+
+.drawer img {
+    width: 80%;
+    max-width: 200px;
+    transform: rotate(-25deg);
+}
+
+.body-trois-quarts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    overflow: auto;
+    padding-left: 250px;
+    width: 100%;
+    background-size: cover;
+}
+
+.element {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    min-width: 400px;
+    flex: 1;  
+}
+
+.programme {
+    text-align: center;
+}
+
+.popup-tab {
+    position: fixed;
+    height: 100vh;
+    width: 40vw;
+    top: 0;
+    left: -50%;
+    overflow: auto; 
+    background-color: var(--bleu);
+    padding-top: 60px;
+    z-index: 100;
+    transition: all .3s;
+}
+
+.popup-tab .container-coach-appli {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.popup-tab.open {
+    left: 250px;
+}
+
+.popup-tab a.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.backdrop {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.open {
+    opacity: .5;
+    pointer-events: all;
+}
+
+.mini-programme {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    background-image:url("/wp-content/uploads/2019/09/Tirage-vertical-2.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
+}
+
+div.mini-programme:nth-child(2) {
+    z-index: 1;
+    top: -20px;
+    left: 20px;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.element.programme {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 200px;
+}
+
+.img-prog-commencer.button-primary{
+    margin: 0 auto;
+}
+
+.MuiToggleButtonGroup-root {
+    margin: 0 auto;
+}
+
+.MuiButton-containedPrimary {
+    background-image: var(--orange_gradient);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin: 0 auto;
+    transition: all .3s;
+}
+
+.MuiButton-containedPrimary:hover {
+    opacity: .8;
+}
+
+.MuiButton-textSecondary:hover {
+    background-color: transparent;
+}
+
+.button-secondary {
+    border: none;
+    color: var(--bleu);
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+
+
+form.donnees-profil>*{
+    margin-top: 20px;
+    display: block;
+}
+
+.MuiSlider-root {
+    width: 80%;
+    margin: 40px auto;
+}
+
+
+@media screen and (max-width: 700px) {
+    .body-trois-quarts {
+        padding-left: 0;
+    }
+    .drawer {
+        display: none;
+    }
+    .responsive_element {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .element {
+        width: 100%;
+    }
+    .header-close-exercices h2{
+        font-size: 1.5rem !important;
+    }
+    .popup-tab {
+        width: 100%;
+    }
+    .popup-tab.open {
+        left: 0;
+    }
+    header a.close-popup {
+        left: calc(100vw - 50px);
+    }
+
+    .two-images-container img {
+        width: 100% !important;
+    }
+
+}
+
+input[type="password"]{
+    -webkit-text-security: disc;
+    text-security: disc;
+}
